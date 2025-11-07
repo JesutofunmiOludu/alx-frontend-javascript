@@ -8,6 +8,10 @@ interface Teacher {
   [key: string]: any;                  // Allows adding other dynamic properties
 }
 
+interface Directors extends Teacher {
+    numberOfReports: number;
+}
+
 // Example usage:
 const teacher1: Teacher = {
   firstName: "John",
@@ -19,9 +23,7 @@ const teacher1: Teacher = {
 
 console.log(teacher1);
 
-interface Directors extends Teacher {
-    numberOfReports: number;
-}
+
 
 const director1: Directors = {
     firstName : "Bolu",
