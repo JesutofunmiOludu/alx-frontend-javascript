@@ -21,6 +21,14 @@ const teacher1: Teacher = {
   contract: false, // Extra property (works because of the index signature)
 };
 
+interface printTeacherFunction{
+    (firstName:string, lastName:string):string;
+}
+
+const printTeacher: printTeacherFunction = (firstName:string, lastName:string):string =>{
+    return `${firstName.charAt(0)}. ${lastName}`;
+}
+
 console.log(teacher1);
 
 
