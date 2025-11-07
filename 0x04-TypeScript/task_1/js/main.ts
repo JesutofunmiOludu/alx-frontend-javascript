@@ -26,8 +26,11 @@ interface printTeacherFunction{
     lastName: string;
 }
 
-function printTeacher(printTeacher: printTeacherFunction) void {
-  return `${firstName.charAt(0)}. ${lastName}`;
+function printTeacher(printTeacher: printTeacherFunction)  {
+  const firstInitial = firstName.charAt(0).toUpperCase();
+
+  // Return the formatted string
+  return `${firstInitial}. ${lastName}`;
 }
 
 // Example usage
