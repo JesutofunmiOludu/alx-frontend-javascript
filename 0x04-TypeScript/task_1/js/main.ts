@@ -26,7 +26,7 @@ interface printTeacherFunction{
     lastName: string;
 }
 
-function printTeacher(printTeacher: printTeacherFunction)=> {
+function printTeacher(printTeacher: printTeacherFunction) void {
   return `${firstName.charAt(0)}. ${lastName}`;
 }
 
