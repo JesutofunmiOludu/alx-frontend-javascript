@@ -25,12 +25,14 @@ interface printTeacherFunction{
     (firstName:string, lastName:string):string;
 }
 
-const printTeacher: printTeacherFunction = (firstName:string, lastName:string):string =>{
-    return `${firstName.charAt(0)}. ${lastName}`;
+function printTeacher(firstName: string, lastName: string): string {
+  return `${firstName.charAt(0)}. ${lastName}`;
 }
 
-console.log(teacher1);
-
+// Example usage
+console.log(printTeacher("John", "Doe")); // Output: J. Doe
+console.log(printTeacher("Sarah", "Smith")); // Output: S. Smith
+console.log(printTeacher("Michael", "Johnson")); // Output: M. Johnson
 
 
 const director1: Directors = {
