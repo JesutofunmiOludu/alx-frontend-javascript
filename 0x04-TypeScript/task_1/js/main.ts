@@ -22,10 +22,11 @@ const teacher1: Teacher = {
 };
 
 interface printTeacherFunction{
-    (firstName:string, lastName:string):string;
+    firstName: string;
+    lastName: string;
 }
 
-function printTeacher(firstName: string, lastName: string): string {
+function printTeacher(printTeacher: printTeacherFunction)=> {
   return `${firstName.charAt(0)}. ${lastName}`;
 }
 
