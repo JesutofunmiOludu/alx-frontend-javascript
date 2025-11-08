@@ -22,18 +22,20 @@ const teacher1: Teacher = {
   contract: false, // Extra property (works because of the index signature)
 };
 
-interface printTeacherFunction{
-    firstName: string;
-    lastName: string;
-}
-
-function printTeacher(firstName, lastName) {
+function printTeacher(firstName: string, lastName:string): string {
   // Get the first initial and convert it to uppercase)  {
   const firstName = firstName.charAt(0).toUpperCase();
 
   // Return the formatted string
   return `${firstName}. ${lastName}`;
 }
+
+interface printTeacherFunction{
+    firstName: string;
+    lastName: string;
+}
+
+
 
 // Example usage
 console.log(printTeacher("John", "Doe")); // Output: J. Doe
