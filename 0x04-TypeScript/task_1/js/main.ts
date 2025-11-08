@@ -27,7 +27,7 @@ interface printTeacherFunction{
     lastName: string;
 }
 
-function printTeacher(firstName:string, lastName:string):string {
+function printTeacher(firstName, lastName):string {
   // Get the first initial and convert it to uppercase)  {
   const firstName = firstName.charAt(0).toUpperCase();
 
