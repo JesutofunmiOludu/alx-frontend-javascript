@@ -9,7 +9,7 @@ interface Teacher {
 }
 
 // Define the Teacher interface
-interface Directors extends Teacher {
+interface Director extends Teacher {
     numberOfReports: number;
 }
 
@@ -40,10 +40,7 @@ console.log(printTeacher("Sarah", "Smith")); // Output: S. Smith
 console.log(printTeacher("Michael", "Johnson")); // Output: M. Johnson
 
 
-// Define the Teacher interface
-interface Directors extends Teacher {
-    numberOfReports: number;
-}
+
 
 const director1: Directors = {
     firstName : "Bolu",
