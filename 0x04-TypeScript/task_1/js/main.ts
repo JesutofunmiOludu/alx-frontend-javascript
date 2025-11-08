@@ -70,7 +70,7 @@ interface StudentInterface {
   displayName(): string;
 }
 
-class StudentClass implements StudentInterface {
+class StudentClass {
   firstName: string;
   lastName: string;
 
@@ -90,10 +90,6 @@ class StudentClass implements StudentInterface {
 
 // Example usage:
 const student = new StudentClass("John", "Doe");
-console.log(student.displayName()); // Output: John
-console.log(student.workOnHomework()); // Output: Currently working
-
-const student = new StudentClass({firstName: "John", lastName: "Doe" });
 console.log(student.displayName()); // Output: John
 console.log(student.workOnHomework()); // Output: Currently working
 
