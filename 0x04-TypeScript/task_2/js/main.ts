@@ -59,7 +59,7 @@ console.log(executeWork(createEmployee(200))); // Getting to work
 type Subjects = 'Math' | 'History';
 
 // Function to teach a class based on the subject
-function teachClass(todayClass: Subjects): string {
+function teachClass(todayClass:Subjects): string {
   if (todayClass === 'Math') {
     return 'Teaching Math';
   }
